@@ -55,3 +55,4 @@ ps -ef|grep "day"                   //获取服务端pid
 kill pid                            //正常终止服务端
 ```
 111
+2222
