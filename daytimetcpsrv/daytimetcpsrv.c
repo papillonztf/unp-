@@ -17,7 +17,7 @@ main(int argc, char **argv)
         //htonl:主机字节序转为长整型网络字节序.
         //sin_addr.s_addr 为unit32 ，与htonl返回值类型一致
         //INADDR_ANY:0x00000000,表示被动方的任意网络接口。
-	servaddr.sin_port        = htons(13);	/* daytime server */
+	servaddr.sin_port        = htons(23);	/* daytime server */
 
 	Bind(listenfd, (SA *) &servaddr, sizeof(servaddr));
         //绑定套接字（源）地址结构至监听套接字

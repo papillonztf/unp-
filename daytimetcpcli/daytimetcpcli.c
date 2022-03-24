@@ -43,7 +43,7 @@ main(int argc, char **argv)//cha**等价于char*argv[],指针数组存放参数�
 
 	bzero(&servaddr, sizeof(servaddr));//套接字地址结构初始化为0
 	servaddr.sin_family = AF_INET;//指定地址族成员，即指定网络层协议，ipv4
-	servaddr.sin_port   = htons(13);	/* daytime server */
+	servaddr.sin_port   = htons(23);	/* daytime server */
         //指定(目的)端口成员，
         //主机字节序转换为网络字节序
 	if (inet_pton(AF_INET, argv[1], &servaddr.sin_addr) <= 0)
