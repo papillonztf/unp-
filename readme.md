@@ -53,4 +53,13 @@ sudo lsof -nP -i:13             //网络相关&&显示端口号而不是名.也�
 
 ps -ef|grep "day"                   //获取服务端pid
 kill pid                            //正常终止服务端
+
+5. 将本项目关联远程github仓库分支master.
+git init ./unp学习          //将unp学习目录创建为git repo.这各目录也是我们的vscode工作文件夹
+
+git remote add origin https://github.com/papillonztf/unpstudy.git   //关联远程github仓库 unpstudy.git,取名为origin
+
+git remote -v                   //查看远程仓库
+
+git branch -r                   //查看远程跟踪分支
 ```
